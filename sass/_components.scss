@@ -1,0 +1,20 @@
+@use './colors' as *;
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hamburger {
+   position: absolute;
+   top: 3em;
+   left: 1em; 
+   transform: translateY(-50%);
+   z-index: 500;
+
+   &-inner, &-inner::before, &-inner::after {
+    background-color: $white;
+    z-index: 500;
+   }
+}
