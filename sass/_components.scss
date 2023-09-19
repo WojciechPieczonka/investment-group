@@ -18,3 +18,26 @@
     z-index: 500;
    }
 }
+
+.section-title {
+    position: relative;
+    margin: 0 auto 2em;
+    font-size: 3.2em;
+    color: $gold;
+    font-weight: 200;
+    width: fit-content;
+
+    &::before {
+        position: absolute;
+        bottom: -.1em;
+        left: 0;
+        width: 40px;
+        height: 2px;
+        background-color: $gold;
+        content: '';
+    }
+
+    span {
+        font-weight: 900;
+    }
+}

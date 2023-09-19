@@ -36,6 +36,28 @@ body {
   z-index: 500;
 }
 
+.section-title {
+  position: relative;
+  margin: 0 auto 2em;
+  font-size: 3.2em;
+  color: #d6c78e;
+  font-weight: 200;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.section-title::before {
+  position: absolute;
+  bottom: -0.1em;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #d6c78e;
+  content: "";
+}
+.section-title span {
+  font-weight: 900;
+}
+
 @keyframes pulse {
   from {
     transform: scale(1);
@@ -220,6 +242,49 @@ h1.company-name {
   grid-column: 1/-1;
 }
 
+.info {
+  position: relative;
+  display: grid;
+  grid-template-areas: "title" "box" "box";
+  padding: 6em 2em;
+}
+.info__title {
+  grid-area: title;
+}
+.info__boxes {
+  grid-area: box;
+}
+.info__box-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: sepia();
+}
+.info__box-title {
+  margin: 0.3em 0;
+  font-size: 2.6rem;
+  color: #d6c78e;
+  font-weight: 200;
+}
+.info__box-text {
+  margin-bottom: 0.5em;
+}
+.info__box-link {
+  display: block;
+  margin-bottom: 2em;
+  font-weight: bold;
+  color: #d6c78e;
+  text-align: right;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.info__box-link:hover {
+  color: #9b9165;
+}
+.info__bg-icon {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .cards__box {
     padding: 10em 2em;
@@ -238,6 +303,12 @@ h1.company-name {
   }
 }
 @media (min-width: 992px) {
+  .section-title {
+    font-size: 4.8rem;
+  }
+  .section-title::before {
+    height: 4px;
+  }
   h1.company-name {
     font-size: 6rem;
   }
