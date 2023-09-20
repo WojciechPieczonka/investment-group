@@ -328,7 +328,7 @@ h1.company-name {
   font-weight: 200;
 }
 .newsletter__form .form-input {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   padding: 1em;
   width: 100%;
   background-color: #fff;
@@ -425,6 +425,22 @@ h1.company-name {
   }
   .plans__item-name {
     margin-top: 0;
+    margin-bottom: 0;
+  }
+  .newsletter__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .newsletter__text {
+    margin: 0;
+  }
+  .newsletter__form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1.2rem;
+  }
+  .newsletter__form .form-input {
     margin-bottom: 0;
   }
 }
