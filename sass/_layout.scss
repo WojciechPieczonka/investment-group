@@ -285,3 +285,46 @@ h1.company-name {
         color: $gold;
     }
 }
+
+//newsletter 
+
+.newsletter {
+    padding: 8em 2em;
+    background-color: $red;
+    text-align: center;
+
+    &__text {
+        padding: 1em;
+        margin: 1em;
+        font-size: 3rem;
+        font-weight: 200;
+    }
+
+    &__form {
+
+      .form-input {
+        margin-bottom: 1em;
+        padding: 1em;
+        width: 100%;
+        background-color: $white;
+        border: 1px solid transparent;
+        border-radius: 8px;
+      }  
+
+      .form-button {
+        padding: 1em;
+        border: 1px solid $gold;
+        background: none;
+        color: $gold;
+        font-weight: 900;
+        cursor: pointer;
+        transition: background-color .3s, color .3s;
+        border-radius: 8px;
+
+        &:hover {
+            background-color:$gold;
+            color: $red ;
+        }
+      }
+    }
+}

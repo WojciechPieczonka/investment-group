@@ -316,6 +316,40 @@ h1.company-name {
   color: #d6c78e;
 }
 
+.newsletter {
+  padding: 8em 2em;
+  background-color: #A01C35;
+  text-align: center;
+}
+.newsletter__text {
+  padding: 1em;
+  margin: 1em;
+  font-size: 3rem;
+  font-weight: 200;
+}
+.newsletter__form .form-input {
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+.newsletter__form .form-button {
+  padding: 1em;
+  border: 1px solid #d6c78e;
+  background: none;
+  color: #d6c78e;
+  font-weight: 900;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 8px;
+}
+.newsletter__form .form-button:hover {
+  background-color: #d6c78e;
+  color: #A01C35;
+}
+
 @media (min-width: 576px) {
   .info {
     display: grid;
